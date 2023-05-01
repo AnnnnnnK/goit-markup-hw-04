@@ -669,4 +669,29 @@ border-radius: 4px;
   color: #f4f4fd;
 }
 
+.footer-container{
+  margin-right: 120px;
+}
+.social-media {
+  
+}
+.social-media-title {
+  font-family: var(--primary-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
 
+letter-spacing: 0.02em;
+color:var(--light-txt-cl);
+margin-bottom: 16px;
+}
+.footer-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-items {
+}
+.footer-link {
+}
+.footer-icons {
+}
