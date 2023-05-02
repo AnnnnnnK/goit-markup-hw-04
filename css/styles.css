@@ -12,6 +12,7 @@
   --accent-txt-color: #404bbf;
   --accent-bg-color: #404bbf;
   --light-txt-cl: #ffffff;
+  --icon-color:#8E8F99;
 }
 
 /**
@@ -75,6 +76,7 @@ img{
 */
 .header {
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   
 }
 .header-container{
@@ -178,6 +180,9 @@ img{
      background-color: rgba(46, 47, 66, 0.7);;
      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero/bg.jpg);
      background-size: cover;
+     max-width: 1440px;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 .hero-title {
@@ -352,6 +357,7 @@ img{
   width: calc((100% - 72px) / 4);
 }
 .team-container {
+  padding: 32px 0;
 }
 
 .team-item:not(:last-child) {
@@ -389,12 +395,14 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  gap: 24px;
 }
 .social-item {
+   
 }
-.social-item:not(:last-child){
-  margin-right: 24px;
-}
+
+
 .social-link {
   height: 40px;
   width: 40px;
@@ -404,6 +412,7 @@ img{
   border-radius: 50%;
 
   background-color:#4D5AE5;
+  
 }
 
 .social-link:hover ,
@@ -413,6 +422,7 @@ img{
 .link {
 }
 .social-icon {
+  fill: var(--btn-color)
 }
 
 /**
@@ -428,7 +438,7 @@ img{
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 1;
+  line-height: 1,1;
 
   text-align: center;
   letter-spacing: 0.02em;
@@ -451,8 +461,7 @@ img{
 
 .customers-link:hover .customer-icons,
 .customers-link:focus .customer-icons{
-  /* border: 1px solid #404BBF;
-  border-radius: 4px; */
+ 
   fill:#404BBF;
 } 
 
@@ -460,6 +469,7 @@ img{
 .customers-link:focus{
   border: 1px solid #404BBF;
   border-radius: 4px;
+  color: #404bbf;
 }
 
 .customers-link {
@@ -472,17 +482,11 @@ img{
 
   border: 1px solid #8E8F99;
   border-radius: 4px;
-}
-.customers-link:hover{
-  border: 1px solid #404BBF;
- 
+  color:var(--icon-color);
 }
 
-.customers-link :hover{
-  fill: #404bbf;
-}
 .customer-icons {
-  fill: #8E8F99;
+  fill: currentColor;
 }
 /**
   |============================
@@ -595,7 +599,13 @@ border-radius: 4px;
 
 }
 .projects-link {
-    text-decoration: none
+    text-decoration: none;
+    display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus{
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 .projects-img {
 }
